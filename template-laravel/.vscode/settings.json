@@ -1,0 +1,14 @@
+{
+    "phpunit.command": "docker exec -t laravel-example-contact-app-laravel.test-1 /bin/sh -c",
+    "phpunit.paths": {
+        "${workspaceFolder}": "/var/www/html",
+    },
+    // フォーマッター
+    "editor.formatOnSave": true,
+    "laravel-pint.enable": true,
+    "laravel-pint.enableDebugLogs": true,
+    "laravel-pint.runInLaravelSail": true,
+    "[php]": {
+        "editor.defaultFormatter": "open-southeners.laravel-pint"
+    }
+}

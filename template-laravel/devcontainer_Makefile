@@ -1,0 +1,22 @@
+# postCreateCommandが動けば、そっちに移す
+init:
+	php artisan key:generate --ansi
+	php artisan migrate:fresh --seed
+	npm run dev
+# すべてのテーブルを削除し、すべてのマイグレーション、seederを再実行
+fresh:
+	php artisan migrate:fresh --seed
+# マイグレーションファイルの内容をDBに反映
+migrate:
+	php artisan migrate
+# すべてのseederを実行
+seed:
+	php artisan db:seed
+# vendorを除外したrouteの確認
+route:
+	php artisan route:list --except-vendor
+# キャッシュ削除
+clear:
+	php artisan cache:clear
+	php artisan view:clear
+	php artisan config:clear
