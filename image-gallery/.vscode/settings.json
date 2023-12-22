@@ -1,5 +1,5 @@
 {
-    "phpunit.command": "docker exec -t example-book-manage-app-laravel.test-1 /bin/sh -c",
+    "phpunit.command": "docker exec -t laravel-image-gallery-laravel.test-1 /bin/sh -c",
     "phpunit.paths": {
         "${workspaceFolder}": "/var/www/html",
     },
